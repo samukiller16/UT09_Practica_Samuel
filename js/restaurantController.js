@@ -631,21 +631,23 @@ class RestaurantController {
     }
 
     const fecha = new Date();
-    const fileName = `Backup_${fecha}.json`;
+    const dia = fecha.getDate();
+    const mes = fecha.getMonth() + 1;
+    const ano = fecha.getFullYear();
+    const fileName = `Backup_${mes}-${dia}-${ano}.json`;
 
     const formData = new FormData();
     formData.append("fileName", fileName);
     formData.append("json", JSON.stringify(objects));
-    console.log("sw");
     fetch("./newBackup.php", {
       method: "post",
       body: formData,
     })
       .then((response) => {
         if (response.ok) {
-          console.log("Backup fallido");
-        } else {
           console.log("Backup correcto");
+        } else {
+          console.log("Backup fallido");
         }
       })
       .catch((ex) => {

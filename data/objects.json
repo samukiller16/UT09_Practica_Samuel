@@ -14,6 +14,11 @@
             "name": "Baguettes",
             "description": "Baguettes para todo el mundo",
             "url": "img/baguette.jpg"
+        },
+        {
+            "name": "algo",
+            "description": "Baguettes para todo el mundo",
+            "url": "img/baguette.jpg"
         }
     ],
 
