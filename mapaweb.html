@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestaurant - Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mapaWeb.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    <header>
+        <nav id="mainnav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul>
+                <li>
+                    <a href="index.html"
+                        itemprop="url"><img src="img/RestauranteLogo.png" alt="Logo" itemprop="image" /></a>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#">Mapa Web</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mapa Web</li>
+        </ol>
+    </nav>
+
+    <main itemscope itemtype="http://schema.org/Restaurant">
+        <div id="containerMapa">
+            <img src="img/mapaweb.png" alt="MapaBestaurant" usemap="#mapa">
+            <map name="mapa">
+                <area shape="rect" coords="455,410,577,522" alt="Inicio" href="index.html">
+                <area shape="rect" coords="288,306,441,386" alt="Contacto" href="#">
+                <area shape="rect" coords="568,329,643,384" alt="Reservas" href="reservas.html">
+                <area shape="rect" coords="616,489,724,585" alt="Ubicación" href="#">
+                <area shape="rect" coords="315,507,416,587" alt="Nosotros" href="nosotros.html">
+                <area shape="rect" coords="468,593,557,640" alt="Mapa Web" href="mapaweb.html">
+            </map>
+        </div>
+        
+        
+    </main>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+        <div class="footer_owner" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <p itemscope itemtype="https://schema.org/copyrightNotice">&copy; 2024 Bestaurant</p>
+            <p itemprop="name">Samuel Manzanaro</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"><img src="img/facebook.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"><img src="img/twitter.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"><img
+                        src="img/instagram.png" alt=""></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/360.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestaurant - Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nosotros.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    <header>
+        <nav id="mainnav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul>
+                <li>
+                    <a href="index.html"
+                        itemprop="url"><img src="img/RestauranteLogo.png" alt="Logo" itemprop="image" /></a>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="mapaweb.html">Mapa Web</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+        </ol>
+    </nav>
+
+    <main itemscope itemtype="http://schema.org/Restaurant">
+        <h1 itemprop="name">Sobre Nosotros</h1>
+
+        <section id="welcome" itemprop="mainContentOfPage">
+            <article itemprop="about" itemscope itemtype="http://schema.org/AboutPage">
+                <h2 itemprop="name">Bienvenido a Bestaurant</h2>
+                <p itemprop="description">
+                    Descubre una experiencia culinaria excepcional en Bestaurant. Nuestro compromiso es ofrecer platos
+                    deliciosos
+                    con ingredientes frescos y de alta calidad.
+                </p>
+            </article>
+            <article>
+                <h2>Nuestros cocineros</h2>
+                <img src="img/cocina.webp" alt="Cocina">
+            </article>
+        </section>
+
+        <section itemprop="additionalProperty" itemscope itemtype="http://schema.org/Photograph">
+            <article>
+                <h2 itemprop="name">Imagen 360º de nuestro restaurante</h2>
+                <canvas id="imagen360" width="600px" height="400px"></canvas>
+            </article>
+
+            <article itemprop="about" itemscope itemtype="http://schema.org/AboutPage">
+                <h2 itemprop="name">Nuestro propósito</h2>
+                <p itemprop="description">
+                    Apuntamos a ser el número 1 en el mundo de la restauración.
+                </p>
+                <p itemprop="description">
+                    Para más información, visite las distintas secciones.
+                </p>
+            </article>
+        </section>
+
+        
+    </main>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+        <div class="footer_owner" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <p itemscope itemtype="https://schema.org/copyrightNotice">&copy; 2024 Bestaurant</p>
+            <p itemprop="name">Samuel Manzanaro</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"><img src="img/facebook.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"><img src="img/twitter.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"><img
+                        src="img/instagram.png" alt=""></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/360.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestaurant - Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    <header>
+        <nav id="mainnav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul>
+                <li>
+                    <a href="index.html"
+                        itemprop="url"><img src="img/RestauranteLogo.png" alt="Logo" itemprop="image" /></a>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="mapaweb.html">Mapa web</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Reservas</li>
+        </ol>
+    </nav>
+
+    <div itemscope itemtype="http://schema.org/SearchAction">
+            <form
+              id="reservaForm"
+              action=""
+              method="get"
+              itemprop="potentialAction"
+            >
+            <progress class="barra" id="progress" value="0" max="100"></progress>
+            <fieldset>
+              <h2>Datos personales</h2>
+              <label class="form__label" for="nombre">Nombre:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" placeholder="Manolo"
+                required
+              />
+  
+              <label class="form__label" for="apellidos">Apellidos:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="apellidos"
+                name="apellidos"
+                pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" placeholder="Lama Jiménez"
+                required
+              />
+  
+              <label class="form__label" for="ocupantes"
+                >Número de Ocupantes:</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="ocupantes"
+                name="ocupantes"
+                min="1" max="12"
+                placeholder="5"
+                required
+              />
+              <input type="button" name="next" class="next action-button form__button" value="Siguiente" />
+            </fieldset>
+            <fieldset>
+              <h2>Datos generales</h2>
+              <label class="form__label" for="fecha">Fecha:</label>
+              <input
+                class="form__input"
+                type="date"
+                id="fecha"
+                name="fecha"
+                required
+              />
+  
+              <label class="form__label" for="hora">Hora:</label>
+              <input
+                class="form__input"
+                type="time"
+                id="hora"
+                name="hora"
+                required
+              />
+  
+              <label class="form__label" for="telefono">Teléfono:</label>
+              <input
+                class="form__input"
+                type="tel"
+                id="telefono"
+                name="telefono"
+                pattern="[0-9]{9}"
+                placeholder="612123123"
+                required
+              />
+              <input type="button" name="previous" class="previous action-button form__button" value="Anterior" />
+              <input type="button" name="next" class="next action-button form__button" value="Siguiente" />
+            </fieldset>
+            <fieldset>
+              <h2>Datos bancarios</h2>
+              <label class="form__label" for="tarjeta">Tarjeta de Débito/Crédito:</label>
+              <input class="form__input" type="text" id="tarjeta" name="tarjeta" pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="0123 1234 1234 1234" required />
+
+              <label class="form__label" for="vencimiento">Fecha de Vencimiento:</label>
+              <input class="form__input" type="text" id="vencimiento" name="vencimiento" pattern="(0[1-9]|1[0-2])/\d{2}" placeholder="MM/AA" required />
+
+              <label class="form__label" for="cvv">CVC:</label>
+              <input class="form__input" type="text" id="cvv" name="cvc" maxlength="3" placeholder="000" pattern="[0-9]{3}" required />
+
+              <label class="form__label" for="titular">Titular:</label>
+              <input class="form__input" type="text" id="titular" name="titular" placeholder="Manolo Lama" required />
+              
+              <!-- Botón para abrir el modal -->
+              <input type="button" name="previous" class="previous action-button form__button" value="Anterior" />
+              <button class="form__button" type="button" data-bs-toggle="modal" data-bs-target="#confirmModal">Reservar</button>
+            </fieldset>
+              <!-- Modal -->
+              <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="confirmModalLabel">Confirmación de Reserva</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ¿Está seguro de que desea finalizar la reserva?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+    </div>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+        <div class="footer_owner" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <p itemscope itemtype="https://schema.org/copyrightNotice">&copy; 2024 Bestaurant</p>
+            <p itemprop="name">Samuel Manzanaro</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"><img src="img/facebook.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"><img src="img/twitter.png"
+                        alt=""></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"><img
+                        src="img/instagram.png" alt=""></i></a>
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

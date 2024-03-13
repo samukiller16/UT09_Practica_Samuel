@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto V1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Hotjar Tracking Code for restaurante Samuel -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3857777, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <header>
+      <nav
+        id="mainnav"
+        itemscope
+        itemtype="http://schema.org/SiteNavigationElement"
+      >
+        <ul id="navPrinc">
+          <li>
+            <a href="#" itemprop="url" id="init"
+              ><img src="img/RestauranteLogo.png" alt="Logo" itemprop="image"
+            /></a>
+          </li>
+        <div id="userArea" class="my-1 header-nav-utilities d-inlineflex align-items-center justify-content-lg-end"></div>
+
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="mapaweb.html">Mapa web</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle show" href="#" id="navCats" role="button"
+              data-bs-toggle="dropdown" aria-expanded="true">Categorías</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle show" href="#" id="navRestaurants" role="button"
+              data-bs-toggle="dropdown" aria-expanded="true">Restaurantes</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+    <nav id="breadcrumb" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+      </ol>
+    </nav>
+      <div class="principal">
+        <section itemscope itemtype="http://schema.org/ItemList">
+          <article
+            class="food"
+            id="burger"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="http://schema.org/ListItem"
+          >
+            <h2 class="food__title" itemprop="name">HAMBURGUESAS</h2>
+            <aside class="card__aside">
+              <figure class="card__figure">
+                <img
+                  src="img/burger.jpg"
+                  alt="burger"
+                  class="card__image"
+                  itemprop="image"
+                />
+              </figure>
+            </aside>
+            <header class="card__header">
+              <h2 class="card__title" itemprop="description">Best Burgers</h2>
+              <h3 class="card__subtitle">Bestaurant</h3>
+              <h3 class="card__subtitle" itemprop="price">4&euro;</h3>
+            </header>
+            <div class="card__body">
+              <p class="card__copy" itemprop="description">
+                Hamburguesas con precio promedio barato.
+              </p>
+              <p class="card__copy">
+                Ingredientes de calidad y varios tipos a elegir.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="food"
+            id="baguette"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="http://schema.org/ListItem"
+          >
+            <h2 class="food__title" itemprop="name">BAGUETTES</h2>
+            <aside class="card__aside">
+              <figure class="card__figure">
+                <img
+                  src="img/baguette.jpg"
+                  alt="baguette"
+                  class="card__image"
+                  itemprop="image"
+                />
+              </figure>
+            </aside>
+            <header class="card__header">
+              <h2 class="card__title" itemprop="description">Best Baguettes</h2>
+              <h3 class="card__subtitle">Bestaurant</h3>
+              <h3 class="card__subtitle" itemprop="price">4,5&euro;</h3>
+            </header>
+            <div class="card__body">
+              <p class="card__copy" itemprop="description">
+                Baguettes desde Bacon a Magreta.
+              </p>
+              <p class="card__copy">Ingredientes adicionales disponibles.</p>
+            </div>
+          </article>
+
+          <article
+            class="food"
+            id="pizza"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="http://schema.org/ListItem"
+          >
+            <h2 class="food__title" itemprop="name">PIZZAS</h2>
+            <aside class="card__aside">
+              <figure class="card__figure">
+                <img
+                  src="img/pizza.jpg"
+                  alt="pizza"
+                  class="card__image"
+                  itemprop="image"
+                />
+              </figure>
+            </aside>
+            <header class="card__header">
+              <h2 class="card__title" itemprop="description">Best Pizzas</h2>
+              <h3 class="card__subtitle">Bestaurant</h3>
+              <h3 class="card__subtitle" itemprop="price">5-14&euro;</h3>
+            </header>
+            <div class="card__body">
+              <p class="card__copy" itemprop="description">
+                Pizzas desde Jamón hasta recetas propias del restaurante.
+              </p>
+              <p class="card__copy">Tamaños disponibles: mediano y familiar.</p>
+            </div>
+          </article>
+        </section>
+
+        
+      </div>
+      <!-- CATEGORIES -->
+      <div id="categories" data-type="list" class="container cat-list">
+        
+      </div>
+      
+    <main>
+      <div id="dishes" data-type="list" class="container dish-list">
+
+      </div>
+    </main>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+      <div
+        class="footer_owner"
+        itemprop="author"
+        itemscope
+        itemtype="http://schema.org/Person"
+      >
+        <p itemscope itemtype="https://schema.org/copyrightNotice">
+          &copy; 2024 Bestaurant
+        </p>
+        <p itemprop="name">Samuel Manzanaro</p>
+      </div>
+      <div class="footer-icons">
+        <a href="#" target="_blank" title="Facebook"
+          ><i class="fab fa-facebook"><img src="img/facebook.png" alt="" /></i
+        ></a>
+        <a href="#" target="_blank" title="Twitter"
+          ><i class="fab fa-twitter"><img src="img/twitter.png" alt="" /></i
+        ></a>
+        <a href="#" target="_blank" title="Instagram"
+          ><i class="fab fa-instagram"><img src="img/instagram.png" alt="" /></i
+        ></a>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="messageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="messageModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="messageModalTitle">Modal title</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	  </div>
+
+    <script src="js/mirestaurante.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

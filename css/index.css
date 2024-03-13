@@ -1,0 +1,507 @@
+.principal {
+  margin-top: 90px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.food {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+  overflow: hidden;
+}
+
+.food__title {
+  text-align: center;
+  margin-top: 10px;
+  color: #ffd700;
+}
+
+.card__figure {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__header {
+  padding: 20px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 24px;
+  margin: 0;
+  color: #ffd700;
+}
+
+.card__subtitle {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #646464;
+}
+
+.card__body {
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card__copy {
+  margin: 0;
+  color: #333; /* Cambia el color del texto según tu diseño */
+}
+
+section {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Categories */
+
+.cat-list {
+  border-top: 1px solid #a0a0a0;
+  padding: 20px 10px 10px 10px;
+  margin-top: 20px;
+}
+.cat-list .cat-list-text {
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cat-list .cat-list-text > div {
+  font-size: 1em;
+  font-weight: 200;
+  color: #343a40;
+}
+.cat-list .cat-list-text h3 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+.cat-list .cat-list-image img {
+  width: 100%;
+}
+
+#category-list a,
+#remove-category a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#category-list a:hover,
+#remove-category a:hover {
+  color: #c5a800;
+}
+
+#category-list > div:hover {
+  animation: agrandar 0.5s alternate 2;
+}
+
+@keyframes agrandar {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(115%);
+  }
+}
+
+#categories #category-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 991px) {
+  .cat-list .cat-list-image {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  .cat-list .cat-list-image img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Dishes */
+.dish-list {
+  border-top: 1px solid #a0a0a0;
+  padding: 20px 10px 10px 10px;
+  margin-top: 20px;
+}
+.dish-list .dish-list-text {
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.dish-list .dish-list-text > div {
+  font-size: 1em;
+  font-weight: 200;
+  color: #343a40;
+}
+.dish-list .dish-list-text h3 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+.dish-list .dish-list-image img {
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 991px) {
+  .dish-list .dish-list-image {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  .dish-list .dish-list-image img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#dishes {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: center;
+}
+
+/* Listado de productos */
+
+#single-product {
+  border: 1px solid #c5a800;
+}
+
+#single-product button {
+  background-color: #c5a800;
+  border-color: black;
+}
+
+.card-product-list,
+.card-product-grid {
+  margin-bottom: 0;
+}
+
+#newWinNav {
+  background-color: #ffd700;
+  margin-bottom: 600px;
+}
+
+#newWinNav h1 {
+  background-color: #ffd700;
+  color: #171615;
+  font-weight: bold;
+  margin-bottom: 300px;
+  margin: auto;
+}
+
+#newWinProd {
+  margin-top: 100px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.1rem;
+  margin-top: 10px;
+}
+
+.card-product-grid:hover {
+  -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+  height: 220px;
+}
+
+.card .img-wrap {
+  overflow: hidden;
+}
+
+.card-lg .img-wrap {
+  height: 280px;
+}
+
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+  height: 228px;
+  padding: 16px;
+}
+
+[class*="card-product"] .img-wrap img {
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+  display: inline-block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.img-wrap {
+  text-align: center;
+  display: block;
+}
+
+.card-product-grid .info-wrap {
+  overflow: hidden;
+  padding: 18px 20px;
+}
+
+[class*="card-product"] a.title {
+  color: #cab811;
+  transition: 0.3s;
+  display: block;
+}
+
+[class*="card-product"] a.title:hover,
+[class*="card-product"] a.title:focus {
+  color: #171615;
+  text-decoration: none;
+}
+
+/* Producto individual */
+.card {
+  border: none;
+}
+
+.product {
+  background-color: #eee;
+}
+
+.brand {
+  font-size: 13px;
+}
+
+.act-price {
+  color: #faa541;
+  font-weight: 700;
+}
+
+.dis-price {
+  text-decoration: line-through;
+}
+
+.about {
+  font-size: 14px;
+}
+
+.color {
+  margin-bottom: 10px;
+}
+
+label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 2px 9px;
+  border: 2px solid #faa541;
+  display: inline-block;
+  color: #faa541;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+label.radio input:checked + span {
+  border-color: #faa541;
+  background-color: #faa541;
+  color: #fff;
+}
+
+.cart i {
+  margin-right: 10px;
+}
+
+#main-image {
+  width: 100%;
+}
+
+/* Restaurante */
+#restaurantes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#restaurantes a {
+  display: flex;
+  text-decoration: none;
+  color: #b0a21b;
+  justify-content: center;
+}
+
+#dishes div.cat-list-image img {
+  width: 300px;
+}
+
+/*Login*/
+#login {
+  cursor: pointer;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 8px;
+  height: 150px;
+}
+
+.user_card {
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #faa541;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background: #60a3bc;
+  padding: 10px;
+  text-align: center;
+}
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.form_container {
+  margin-top: 20px;
+}
+.login_btn {
+  width: 100%;
+  background: #c0392b !important;
+  color: white !important;
+}
+.login_btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.login_container {
+  padding: 0 2rem;
+}
+.input-group-text {
+  background: #c0392b !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-controllabel::before {
+  background-color: #c0392b !important;
+}
+
+#btnDenyCookie {
+  background-color: rgb(248, 249, 250);
+  border-color: rgb(248, 249, 250);
+  color: rgb(52, 58, 64);
+}
+#btnAcceptCookie {
+  background-color: #ffd700;
+  border-color: #ffd700;
+  color: #171615;
+}
+
+#btnAcceptCookie:hover {
+  background-color: #c5a800;
+  border-color: #ffd700;
+  color: #000000;
+}
+
+#btnDenyCookie:hover {
+  background-color: rgb(52, 58, 64);
+  border-color: rgb(248, 249, 250);
+  color: rgb(248, 249, 250);
+}
+
+.account{
+  height: 40px;
+  text-align: center;
+}
+
+#userArea img{
+  margin-top: 10px;
+}
+
+#userArea{
+  text-align: center;
+}
+
+#b-fav{
+  background-color: #ffd700;
+  border-color: #ffd700;
+  color: #000000;
+}
+
+#b-fav:hover{
+  background-color: #c5a800;
+}
